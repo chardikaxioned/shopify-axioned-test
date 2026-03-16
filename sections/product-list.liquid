@@ -1,0 +1,86 @@
+<div
+     class="page-width_13 big-page-width_18 x-pad_m margin_auto product-list-section y-pad_m">
+  {% if section.settings.heading != blank %}<h2 class="text_center h4">{{section.settings.heading}}</h2> {%endif%}
+  <div class="custom-product-grid flex flex_wrap {% if section.settings.swipe_on_mobile == true %} mob--swiper {% endif%} ">
+  
+  {% for block in section.blocks %}
+    {% assign product = all_products[block.settings.product] %}
+    <div class="product-list-product-wrapper product-list-product-wrapper-{{block.id}} width_30  mob--width_100  ">
+    {% render "product-list-item", block:block, section:section, product:product %}
+
+    </div>
+    <style>
+       .product-list-product-wrapper-{{block.id}} .custom-product-card:hover{
+  background-color:{{block.settings.bg-color | color_lighten: 0}} !important;
+  }
+  
+        
+      </style>
+    {%endfor%}
+  
+  </div>
+  
+  
+</div>
+{% schema %}
+  {
+    "name": "Custom Product List",
+    "settings": [
+   {
+      "type": "checkbox",
+      "id": "swipe_on_mobile",
+      "default": false,
+      "label": "t:sections.featured-collection.settings.swipe_on_mobile.label"
+    },
+{
+            "type": "textarea",
+            "id": "heading",
+            "label": "Section Title"
+          }
+],
+    "blocks": [
+      {
+        "type": "product",
+        "name": "Product",
+        "settings": [
+{
+            "type": "product",
+            "id": "product",
+            "label": "Select Product"
+          },
+{
+            "type": "color",
+            "id": "bg-color",
+            "label": "Background Color"
+          }, 
+
+{
+            "type": "image_picker",
+            "id": "image",
+            "label": "Product image"
+          },
+{
+            "type": "textarea",
+            "id": "heading",
+            "label": "Product Title"
+          }
+          
+         
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Product List",
+        "category": "Custom Section"
+        
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

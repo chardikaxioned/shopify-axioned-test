@@ -1,0 +1,66 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "text_UcRGYL": {
+          "type": "text",
+          "settings": {
+            "heading": "Our Mission",
+            "subtext": "<p>BeLive was founded in 2017 with a mission to create health-supporting supplements that taste great. We're here to make living a healthy life fun and effortless! Here's to never forgetting to take your supplements again.</p>"
+          }
+        },
+        "link_list_6p4mzx": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Shop",
+            "menu": "footer-shop"
+          }
+        },
+        "link_list_MPYGnk": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Customer Service",
+            "menu": "footer-customer-service"
+          }
+        },
+        "link_list_3cLFMq": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Follow Us",
+            "menu": "social"
+          }
+        }
+      },
+      "block_order": [
+        "text_UcRGYL",
+        "link_list_6p4mzx",
+        "link_list_MPYGnk",
+        "link_list_3cLFMq"
+      ],
+      "settings": {
+        "color_scheme": "scheme-5",
+        "newsletter_enable": false,
+        "newsletter_heading": "Subscribe to our emails",
+        "show_social": true,
+        "enable_country_selector": true,
+        "enable_language_selector": true,
+        "payment_enable": true
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}

@@ -1,0 +1,124 @@
+
+<div class="pad-top_s image-text-slider-section" >
+  
+  <div class="image-text-slider-bg" >
+ 
+
+<div class=" page-width_13 big-page-width_18 x-pad_xl margin_auto mob--x-pad_0">
+  <div class="icon-slider-container swiper-container flow_hid pos_rel pad-bot_s" >
+     <div class="icon-slider-next"></div>
+      <div class="icon-slider-prev"></div>
+
+  <div class="swiper-wrapper">
+  {% for block in section.blocks %}
+    <div class="trans_2e cursor_point swiper-slide-{{block.id}} height_auto flex flex_col align_start logo-text-slide swiper-slide y-pad_s text_center" style="background-color:{{block.settings.bg-color | color_lighten: 9 }};">
+      <style>
+       .icon-slider-container .swiper-slide-{{block.id}}:hover{
+  background-color:{{block.settings.bg-color | color_lighten: 0}} !important;
+  }
+  
+        
+      </style>
+      <div class="page-width_5 margin-left_auto margin-right_auto  x-pad_m mob--x-pad_5 ">
+<div class="icon-slider-image-container " >
+{% render 'image', image:block.settings.image, class:"icon-slider-image margin-bot_xs" %}
+  </div>
+         <a style="text-decoration:none;color:black;" {% if block.settings.link != blank %} href="{{block.settings.link}}" {% endif%}><h2 class="let-space_0 f7 weight_600 y-margin_0 text-columns-heading ">{{block.settings.heading | newline_to_br}}</h2>
+        
+        <p class=" f9 text_center y-margin_0"let-space_0 >
+      {{block.settings.subheading}}
+      </p>
+        </a>
+       
+    </div>
+    </div>
+    
+    {%endfor%}
+    </div>
+  </div>
+  </div>
+  
+</div>
+</div>
+  <script>
+      var swiper = new Swiper(".icon-slider-container", {
+        slidesPerView: 2.5,
+        spaceBetween:10,
+        watchOverflow :true,
+        navigation: {
+          nextEl: ".icon-slider-next",
+          prevEl: ".icon-slider-prev",
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 3,
+          },
+            
+          1024: {
+            slidesPerView: 4,
+          },
+           
+          1240: {
+            slidesPerView: 5,
+          },
+        },
+      });
+    </script>
+{% schema %}
+  {
+    "name": "Icon Text Slider",
+    "settings": [
+
+],
+    "blocks": [
+      {
+        "type": "logo-text",
+        "name": "Block",
+        "settings": [
+{
+            "type": "color",
+            "id": "bg-color",
+            "label": "Block Background Color"
+          },
+ 
+{
+            "type": "image_picker",
+            "id": "image",
+            "label": "Product image"
+          },     
+{
+            "type": "text",
+            "id": "heading",
+            "label": "Heading",
+            "default": "Heading"
+          }, 
+{
+            "type": "text",
+            "id": "subheading",
+            "label": "Subheading"
+          },
+{
+            "type": "url",
+            "id": "link",
+            "label": "Link"
+          }
+          
+         
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Icon Text Slider",
+        "category": "Custom Section"
+        
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

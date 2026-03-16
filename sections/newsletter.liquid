@@ -1,0 +1,212 @@
+{{ 'component-newsletter.css' | asset_url | stylesheet_tag }}
+{{ 'newsletter-section.css' | asset_url | stylesheet_tag }}
+<style>
+  .newsletter__wrapper{
+  margin:0px !Important;
+  }
+  @media screen and (min-width: 750px){
+  .newsletter-form{
+  width:100%;
+    max-width:100% !important;
+  }
+  .newsletter__wrapper .newsletter-form__field-wrapper{
+  max-width:100%;
+    width:100%;
+  }
+   
+  }
+  .newsletter-form__field-wrapper .field__input{
+  border-radius:5px;
+  }
+   .newsletter-form__button{
+    width:auto !important;
+    }
+  
+  @media(max-width:750px){
+    .newsletter-form__button{
+    width:100% !important;   
+  margin:20px 0px 0px !important;
+    }
+  }
+</style>
+
+<div class="newsletter center{% if section.settings.full_width == false %} newsletter--narrow page-width{% endif%}" style="background-color:{{section.settings.bg-color}};">
+  <div class="y-margin_0 y-pad_m flex flex_wrap justify_between align_center newsletter__wrapper color-{{ section.settings.color_scheme }} gradient" style="background-color:{{section.settings.bg-color}};">
+    {%- for block in section.blocks -%}
+      {%- case block.type -%}
+        {%- when '@app' -%}
+          {% render block %}
+        {%- when 'paragraph' -%}
+    <div class="newsletter-content width_30 flex justify_center align_center text_left min-width_300 mob--min-width_0 flex-gorw_1 mob--width_100">
+ <img alt="Paper Place Icon" class="block width_auto" style="margin-right:35px" src="https://cdn.shopify.com/s/files/1/1657/4181/t/26/assets/plane.png?v=53915416277781831921714755517">
+<!-- <svg id="icon-paperplane"  style="margin-right:35px;" class="block width_auto" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="70" height="70" viewBox="0 0 70 70">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle" width="70" height="70" fill="none"/>
+    </clipPath>
+  </defs>
+  <rect id="Rectangle-2" data-name="Rectangle" width="70" height="70" fill="none"/>
+  <g id="icon-paperplane-2" data-name="icon-paperplane" clip-path="url(#clip-path)">
+    <g id="Group">
+      <path id="Shape" d="M30.3,60.742a1.361,1.361,0,0,1-.639-.559.327.327,0,0,1-.029-.043L20.856,44.169.968,38.084a1.367,1.367,0,0,1-.3-2.484l24.4-14.429a1.367,1.367,0,1,1,1.391,2.354L4.731,36.376l16.654,5.095L54.868,6.729,36.892,17.359A1.367,1.367,0,1,1,35.5,15.006L60.555.191a1.367,1.367,0,0,1,2.063,1.176V55.1A1.366,1.366,0,0,1,60.85,56.4L41.873,50.6l-10.089,9.86a1.366,1.366,0,0,1-1.486.283Z" transform="translate(7.383)" fill="#0a050b"/>
+      <path id="Path" d="M15.1.4a1.367,1.367,0,0,0-1.934,0L.4,13.163A1.367,1.367,0,0,0,2.334,15.1L15.1,2.334A1.367,1.367,0,0,0,15.1.4Z" transform="translate(7.383 47.12)" fill="#0a050b"/>
+      <path id="Path-2" data-name="Path" d="M3.545.4.4,3.545A1.367,1.367,0,1,0,2.334,5.478L5.478,2.334A1.367,1.367,0,1,0,3.545.4Z" transform="translate(0 64.121)" fill="#0a050b"/>
+      <path id="Path-3" data-name="Path" d="M1.367,0A1.367,1.367,0,0,0,.4,2.334a1.366,1.366,0,0,0,1.933,0A1.366,1.366,0,0,0,2.334.4,1.377,1.377,0,0,0,1.367,0Z" transform="translate(17.169 67.185)" fill="#0a050b"/>
+      <path id="Path-4" data-name="Path" d="M7.161.4.4,7.16A1.367,1.367,0,1,0,2.334,9.094l6.76-6.76A1.367,1.367,0,0,0,7.161.4Z" transform="translate(20.581 57.013)" fill="#0a050b"/>
+      <path id="Path-5" data-name="Path" d="M7.179.4.4,7.179A1.367,1.367,0,1,0,2.334,9.112L9.112,2.334A1.367,1.367,0,0,0,7.179.4Z" transform="translate(43.894 56.494)" fill="#0a050b"/>
+      <path id="Path-6" data-name="Path" d="M1.367,2.734A1.367,1.367,0,0,0,2.334.4,1.366,1.366,0,0,0,.4.4a1.367,1.367,0,0,0,.967,2.334Z" transform="translate(36.426 18.235)" fill="#0a050b"/>
+    </g>
+  </g>
+</svg> -->
+
+      <div >
+     <h2 class="h5 y-margin_0 weight_600" {{ block.shopify_attributes }}>{{ block.settings.heading}}</h2>
+          <div class="newsletter__subheading rte child-inherit f10" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
+      </div>
+      </div>  
+      {%- when 'email_form' -%}
+          <div {{ block.shopify_attributes }} class="width_60 flex-grow_1 x-pad_l mob--x-pad_0" style="margin:0px;">
+            {% form 'customer', class: 'newsletter-form' %}
+              <input type="hidden" name="contact[tags]" value="newsletter">
+              <div class="newsletter-form__field-wrapper">
+                <div class="field flex justify_between flex_wrap ">
+                  <input
+                    id="NewsletterForm--{{ section.id }}"
+                    type="email"
+                    name="contact[email]"
+                    class="field__input back_white height_auto width_70 flex-grow_0 mob--width_100 "
+                    value="{{ form.email }}"
+                    aria-required="true"
+                    autocorrect="off"
+                    autocapitalize="off"
+                    autocomplete="email"
+                    {% if form.errors %}
+                      autofocus
+                      aria-invalid="true"
+                      aria-describedby="Newsletter-error--{{ section.id }}"
+                    {% elsif form.posted_successfully? %}
+                      aria-describedby="Newsletter-success--{{ section.id }}"
+                    {% endif %}
+                    placeholder="{{ 'newsletter.label' | t }}"
+                    required
+                  >
+                  <label class="field__label" for="NewsletterForm--{{ section.id }}">
+                    {{ 'newsletter.label' | t }}
+                  </label>
+                  <div class="btn-wrap  newsletter-form__button mob--width_100 width_auto">
+                    <span></span>
+                  <button type="submit"  class="button-large button width_100" name="commit" id="Subscribe" aria-label="{{ 'newsletter.button_label' | t }}">
+                  Sign Up Now
+                  </button>
+                  </div>
+                </div>
+                
+                {%- if form.errors -%}
+                  <small class="newsletter-form__message form__message" id="Newsletter-error--{{ section.id }}">{% render 'icon-error' %}{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}</small>
+                {%- endif -%}
+              </div>
+              {%- if form.posted_successfully? -%}
+                <h3 class="newsletter-form__message newsletter-form__message--success form__message" id="Newsletter-success--{{ section.id }}" tabindex="-1" autofocus>{% render 'icon-success' %}{{ 'newsletter.success' | t }}</h3>
+              {%- endif -%}
+            {% endform %}
+          </div>
+      {%- endcase -%}
+    {%- endfor -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.newsletter.name",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "options": [
+        {
+          "value": "accent-1",
+          "label": "t:sections.newsletter.settings.color_scheme.options__1.label"
+        },
+        {
+          "value": "accent-2",
+          "label": "t:sections.newsletter.settings.color_scheme.options__2.label"
+        },
+        {
+          "value": "background-1",
+          "label": "t:sections.newsletter.settings.color_scheme.options__3.label"
+        },
+        {
+          "value": "background-2",
+          "label": "t:sections.newsletter.settings.color_scheme.options__4.label"
+        },
+        {
+          "value": "inverse",
+          "label": "t:sections.newsletter.settings.color_scheme.options__5.label"
+        }
+      ],
+      "default": "background-1",
+      "label": "t:sections.newsletter.settings.color_scheme.label"
+    },
+ {
+      "type": "color",
+      "id": "bg-color",
+      "label": "Background Color"
+    },
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "default": true,
+      "label": "t:sections.newsletter.settings.full_width.label"
+    },
+    {
+      "type": "paragraph",
+      "content": "t:sections.newsletter.settings.paragraph.content"
+    }
+  ],
+  "blocks": [
+    
+    {
+      "type": "paragraph",
+      "name": "t:sections.newsletter.blocks.paragraph.name",
+      "limit": 2,
+      "settings": [
+  {
+          "type": "text",
+          "id": "heading",
+          "default": "Subscribe to our emails",
+          "label": "t:sections.newsletter.blocks.heading.settings.heading.label"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "default": "<p>Be the first to know about new collections and exclusive offers.</p>",
+          "label": "t:sections.newsletter.blocks.paragraph.settings.paragraph.label"
+        }
+      ]
+    },
+    {
+      "type": "email_form",
+      "name": "t:sections.newsletter.blocks.email_form.name",
+      "limit": 1
+    },
+    {
+      "type": "@app"
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.newsletter.presets.name",
+      "blocks": [
+       
+        {
+          "type": "paragraph"
+        },
+        {
+          "type": "email_form"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

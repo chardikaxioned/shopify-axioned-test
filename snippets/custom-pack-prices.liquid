@@ -1,0 +1,29 @@
+{% comment %}
+  Custom pack prices for each product
+  Use product handle as the key for easy reference
+{% endcomment %}
+
+{% assign custom_prices = "" | split: "" %}
+
+{% comment %} Elderberry {% endcomment %}
+{% assign elderberry = "elderberry-gummies" %}
+{% assign elderberry_1pack = 0 %}
+{% assign elderberry_2pack = 31.92 %}
+{% assign elderberry_3pack = 41.99 %}
+{% assign elderberry_5pack = 70.04 %}
+{% assign elderberry_data = elderberry | append: ':' | append: elderberry_1pack | append: ',' | append: elderberry_2pack | append: ',' | append: elderberry_3pack | append: ',' | append: elderberry_5pack %}
+{% assign custom_prices = custom_prices | push: elderberry_data %}
+
+{% comment %} Turmeric {% endcomment %}
+{% assign turmeric = "turmeric" %}
+{% assign turmeric_1pack = 0 %}
+{% assign turmeric_2pack = 3199 %}
+{% assign turmeric_3pack = 4322 %}
+{% assign turmeric_5pack = 7187 %}
+{% assign turmeric_data = turmeric | append: ':' | append: turmeric_1pack | append: ',' | append: turmeric_2pack | append: ',' | append: turmeric_3pack | append: ',' | append: turmeric_5pack %}
+{% assign custom_prices = custom_prices | push: turmeric_data %}
+
+{% comment %} Repeat for all products... {% endcomment %}
+
+{% comment %} Store the array in a global variable {% endcomment %}
+{% assign all_custom_prices = custom_prices %}

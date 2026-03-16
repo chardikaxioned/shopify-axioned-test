@@ -1,0 +1,92 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "collection-menu": "",
+        "tags": "Best Sellers,\nwomens health,\ndigestive health,\nImmunity,\nStress Relief,\nweight management",
+        "bg-color": "#76cee5",
+        "show_collection_description": true,
+        "show_collection_image": true
+      }
+    },
+    "1632860238d753444a": {
+      "type": "product-list",
+      "disabled": true,
+      "blocks": {
+        "86db75eb-7b2d-4bb0-ae91-7f413129930a": {
+          "type": "product",
+          "settings": {
+            "product": "magnesium-gummies-made-with-magnesium-glycinate-for-stress-relief-support-optimal-relaxation-calm-mood-supplement-for-adults-and-kids-pineapple-flavor-60-count",
+            "bg-color": "#f2caf2",
+            "heading": "Weight Management Bundle"
+          }
+        },
+        "f60aedcd-89dd-4b21-a5f8-4bcad049a3d4": {
+          "type": "product",
+          "settings": {
+            "product": "biotin-updated-1",
+            "bg-color": "#b0e4f4",
+            "heading": "Women’s Health Bundle"
+          }
+        },
+        "b787df87-d0f4-419f-af7c-c26faf5516d9": {
+          "type": "product",
+          "settings": {
+            "product": "elderberry-gummies",
+            "bg-color": "#c3eec2",
+            "heading": "Digestive Health Bundle"
+          }
+        },
+        "fdda3559-05ca-4197-8b0c-8d29f468adf9": {
+          "type": "product",
+          "settings": {
+            "product": "d3-b12-gummies-sugar-free-gummies-vitamin-d-and-methyl-b12-vitamins-for-immune-support-energy-bone-health-supports-metabolism-strawberry-flavor-60-count",
+            "bg-color": "#efd4ab",
+            "heading": "Immunity Bundle"
+          }
+        }
+      },
+      "block_order": [
+        "86db75eb-7b2d-4bb0-ae91-7f413129930a",
+        "f60aedcd-89dd-4b21-a5f8-4bcad049a3d4",
+        "b787df87-d0f4-419f-af7c-c26faf5516d9",
+        "fdda3559-05ca-4197-8b0c-8d29f468adf9"
+      ],
+      "settings": {
+        "swipe_on_mobile": false,
+        "heading": "Shop Our Bundles and Save 10%"
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "show_title": true,
+        "products_per_page": 16,
+        "image_ratio": "square",
+        "show_secondary_image": false,
+        "add_image_padding": true,
+        "show_image_outline": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_filtering": true,
+        "enable_sorting": false,
+        "collapse_on_larger_devices": false
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "1632860238d753444a",
+    "product-grid"
+  ]
+}

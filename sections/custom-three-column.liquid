@@ -1,0 +1,104 @@
+<div class="three-column-section y-pad_s about-us-2-column">
+<div class="three-column-grid flex page-width_12 flex_wrap justify_end">
+ <div class="three-column-content-container width_40 x-pad_l mob--width_100 min-width_200 flex-grow_1">
+   <h2 class="f4">{{section.settings.heading}}</h2>
+   <div class="f9 child-inherit">{{section.settings.description}}</div>
+   {% if section.settings.label != blank %}
+   <div class="btn-wrap margin-bot_xs margin-top_s" >
+     <span></span>
+     <a class="button button-large" href="{{section.settings.link}}">{{section.settings.label}}</a>
+   </div>
+   {%endif%}
+   
+  </div>
+  <div class="three-column-blocks-container width_40 x-pad_s mob--width_100 min-width_200 flex-grow_1">
+  {% for block in section.blocks %}
+    <div class="three-column-block-content flex align_center justify_center y-pad_xs">
+  {%comment%}  {% render 'image', image:block.settings.icon, class:"width_30 three-column-block-image" %}{% endcomment%}
+      <img alt="{{ block.settings.icon.alt | escape }}" src="{{block.settings.icon | img_url:"master"}}" class="width_30 three-column-block-image">
+<div class="width_70">
+  <h2 class="f6 weight_600 text_upper">{{block.settings.heading}}</h2>
+  <p class="f10">{{block.settings.description}}</p>
+    </div>
+    </div>
+    {% endfor%}
+  </div>
+    
+  <div class="three-column-image-container width_20 x-pad_s mob--width_100 min-width_200 ">
+{% render 'image', image:section.settings.image, class:"" %}
+
+
+    </div>
+  
+  
+  </div>
+
+
+</div>
+{% schema %}
+  {
+    "name": "Custom Three Column",
+    "settings": [
+  {
+  "type":"text",
+  "id":"heading",
+  "label":"Enter Heading"
+  },
+  {
+  "type":"richtext",
+  "id":"description",
+  "label":"Enter description"
+  },
+  {
+  "type":"text",
+  "id":"label",
+  "label":"Enter Button Label"
+  },
+  {
+  "type":"url",
+  "id":"link",
+  "label":"Enter Button Link"
+  },
+  {
+  "type":"image_picker",
+  "id":"image",
+  "label":"Select Main Image"
+  }
+  ],
+  "blocks":[
+  {
+  "name":"Image Text",
+  "type":"image-text",
+  "settings":[
+  {
+  "type":"text",
+  "id":"heading",
+  "label":"Enter Heading"
+  },
+  {
+  "type":"richtext",
+  "id":"description",
+  "label":"Enter description"
+  },
+  {
+  "type":"image_picker",
+  "id":"icon",
+  "label":"Select Icon Image"
+  }
+  ]
+  }
+  ],
+  "presets":[
+  {
+  "category":"Custom Section",
+  "name":"Custom Three Column"
+  }
+  ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

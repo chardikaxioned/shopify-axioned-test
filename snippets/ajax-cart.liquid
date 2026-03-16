@@ -1,0 +1,172 @@
+<!--ajax cart modal-->
+<script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+<div class="ajax-cart__modal js-ajax-cart-modal"  data-recommended-products-url="{{ 'cart-recommended-products.json' | asset_url }}">
+
+    <div class="ajax-cart-modal">
+
+        <!--ajax cart modal close-->
+        <div class="ajax-cart-modal__close js-ajax-cart-modal-close" tabindex="0">
+            {% include 'icon-close' %}
+        </div>
+        <!--end ajax cart modal close-->
+
+        <!--ajax cart modal content-->
+        <div class="ajax-cart-modal__content js-ajax-cart-modal-content"></div>
+        <!--end ajax cart modal content-->
+
+    </div>
+
+</div>
+<!--end ajax cart modal-->
+
+<!--ajax cart drawer-->
+<div class="ajax-cart__drawer js-ajax-cart-drawer">
+
+    <div id="ajax-cart-focus" class="ajax-cart-drawer">
+        <p class="visually-hidden open-modal-alert" >Cart Drawer Open</p>
+        <form action="{{ routes.cart_url }}" method="post" novalidate class="cart">
+            <div class="ajax-cart">
+                <p class="h5" style="margin:0px;
+                                     padding-top:10px;padding-left:20px;">Shopping Cart
+                    <div class="ajax-cart-drawer__close js-ajax-cart-drawer-close" tabindex="0">
+                        {% include 'icon-close' %}
+                        <span class="visually-hidden">Close Shopping Cart</span>
+                    </div>
+                </p>
+
+            </div>
+
+          
+            <div class="cart__shipping-progress" data-free-shipping-amount="{{ settings.free_shipping_amount }}">
+                <span data-cart-shipping-progress></span>
+            </div>
+
+
+            <!--ajax cart drawer close-->
+
+            <!--end ajax cart drawer close-->
+
+            <!--ajax cart drawer content-->
+
+            <div class="ajax-cart-drawer__content js-ajax-cart-drawer-content"></div>
+            <!--end ajax cart drawer content-->
+
+
+
+            <!--ajax cart drawer buttons-->
+            <div class="ajax-cart-drawer__buttons">
+                <div class="ajax-cart footer">
+                    <div class="cart-subtotal">
+                        <span class="cart-subtotal__title "><h3 class="h7 y-margin_0 margin-bot_xs">Subtotal</h3></span>
+                        <span class="cart-subtotal__price" data-cart-subtotal>{{ cart.total_price | money}}</span>
+                    </div>
+                    
+                </div>
+              <div class="btn-wrap margin-bot_xs">
+              <span></span>
+                <input type="submit" name="checkout"
+                       class="cart__submit button button-large js-ajax-checkout-button width_100"
+                       value="Checkout-{{ cart.total_price | money}}">
+              </div>
+                
+
+            </div>
+
+            <!--end ajax cart drawer buttons-->
+        </form>
+
+        <div class="recomProds">
+
+        </div>
+
+
+        <div class="emptyCart hide">
+            <div class="ajax-cart-empty">
+                <h2>Your cart is currently empty</h2>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!--end ajax cart drawer-->
+
+<!--ajax cart overlay-->
+<div class="ajax-cart__overlay js-ajax-cart-overlay"></div>
+<!--end ajax cart overlay-->
+<script class="recommended-item-template" type="text/html">
+    {% raw %}
+        <h2>Frequently Bought Together</h2>
+        {{#recommendedProducts}}
+    <div class="recommended-product" data-item-id="{{product_id}}" {{additional_data_attrs}}>
+        <div class="ajax-cart-item__single flex">
+            <div class=" ajax-cart-item__image">
+                <a href="{{product_url}}"><img src="{{product_img_src}}" /></a>
+            </div>
+            <div class="row flex align_center">
+                <div class="left-content">
+                    <div class="left-details">
+                        <div class="ajax-cart-item__title">{{product_title}}</div>
+                    </div>
+                </div>
+            </div>
+
+            <form action="/cart/add" method="post" class="inner-container" data-section-settings='{% endraw %}{{ section_settings }}{% raw %}'>
+                <div class="row flex align_center qty-price-cont">
+
+                    <div class="right-content">
+                        <div class="ajax-cart-item__price text_center">{{product_price}}</div>
+                    </div>
+                    <div class="recommended-product-options" style="display: none">{{{product_options}}}</div>
+                </div>
+                <button type="submit" data-use-primary-button="true" class="ProductForm__AddToCart Button Button--secondary Button--small" data-action="add-to-cart"><span>Add +</span></button>
+
+            </form>
+        </div>
+    </div>
+        {{/recommendedProducts}}
+    {% endraw %}
+</script>
+
+
+
+<script>
+  $( document ).ready(function() {
+  
+  document.querySelector('.ajax-cart-drawer').addEventListener("click",function(e){
+ var qty = 0; 
+    var target = e.target;
+ if(e.target.classList.contains("cart-item_dec")){
+    console.log("click minus")
+    
+  qty =  parseFloat(e.target.nextElementSibling.getAttribute("value"));
+
+      qty -=1;
+      
+      if(qty >= 0){
+    e.target.nextElementSibling.setAttribute("value",qty)
+$(".cart-item_no").trigger("change")
+      }
+      }
+    
+      if(e.target.classList.contains("cart-item_inc")){
+    console.log("click plus")
+    
+    qty =  parseFloat(e.target.previousElementSibling.getAttribute("value"));
+
+      qty +=1;
+    e.target.previousElementSibling.setAttribute("value",qty)
+    $(".cart-item_no").trigger("change")
+
+    }
+    
+    
+    
+    
+  })
+  
+  
+  
+  })
+  
+</script>
+

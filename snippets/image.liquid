@@ -1,0 +1,18 @@
+ <div class="{{class}} custom_media image-with-text__media  {% if image != blank %}media{% else %}image-with-text__media--placeholder placeholder{% endif %}"
+        {% if image != blank %} style="padding-bottom: {{ 1 | divided_by: image.aspect_ratio | times: 100 }}%;"{% endif %}
+      >
+        {%- if image != blank -%}
+          <img
+            srcset="
+              {%- if image.width >= 1500 -%}{{ image | img_url: '1500x' }} 1500w,{%- endif -%}"
+            src="{{ image | img_url: '1500x' }}"
+            sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+            alt="{{ image.alt | escape }}"
+            loading="lazy"
+            width="{{ image.width }}"
+            height="{{ image.height }}"
+          >
+        {%- else -%}
+          {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+        {%- endif -%}
+      </div>

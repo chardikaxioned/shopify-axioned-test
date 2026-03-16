@@ -1,0 +1,170 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "16334167021cc09b05": {
+      "type": "simple-banner",
+      "settings": {
+        "image": "shopify://shop_images/About_Us_1.png",
+        "heading": "",
+        "overlay": false,
+        "color": "#ffffff"
+      }
+    },
+    "1633418211452551e3": {
+      "type": "rich-text",
+      "blocks": {
+        "4cf4a7be-f001-4b54-8914-d55a905b5507": {
+          "type": "heading",
+          "settings": {
+            "heading": "About BeLive",
+            "heading_size": "h1"
+          }
+        },
+        "1633418211452551e3-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>It all started with the idea that vitamins can be nutritious, delicious, and a fun part of your daily routine. When your schedule starts to look like work, eat, sleep, repeat, you deserve something to look forward to. Enter our BeLive gummies, the new highlight of your day and reason you'll never forget to take your supplements ever again. Plus, let's be real — having something that taste delicious is clearly better than swallowing a pill. We're proof that you can have your treat and feel good too! </p>"
+          }
+        }
+      },
+      "block_order": [
+        "4cf4a7be-f001-4b54-8914-d55a905b5507",
+        "1633418211452551e3-1"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
+      }
+    },
+    "1633419571547f6135": {
+      "type": "small-side-image-text",
+      "settings": {
+        "image": "shopify://shop_images/11.png",
+        "heading": "We believe in having fun",
+        "description": "<p>Life’s too short for anything boring, even your supplemental routine. Our goal is to create superior products that taste good to make you feel even better. </p><p><br/><br/></p>",
+        "change": false
+      }
+    },
+    "1633419579a85cbd0b": {
+      "type": "small-side-image-text",
+      "settings": {
+        "image": "shopify://shop_images/12.png",
+        "heading": "We make healthy living approachable",
+        "description": "<p>Our gummies are designed to be beneficial for all ages, to make living a healthy life approachable. </p><p><br/><br/></p>",
+        "change": true
+      }
+    },
+    "1633419637ef1a3a5f": {
+      "type": "small-side-image-text",
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/Group_3.png",
+        "heading": "We Care",
+        "description": "<p>BeLive's gummies are designed to be beneficial for all ages.</p><p><br/><br/></p>",
+        "change": false
+      }
+    },
+    "1633587010e587ccd6": {
+      "type": "meet-founder",
+      "disabled": true,
+      "settings": {
+        "image-color": "#fffae3",
+        "bg-color": "#fff1a8",
+        "text-color": "#000000",
+        "heading": "Meet the Founder",
+        "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.   Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos. Lorem ipsum dolor sit amet, consectetur adipiscing elit.   Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos.</p>",
+        "image": "shopify://shop_images/Fill_1_1500x_75c967e6-96c8-4aed-a0b9-3adbe89eec9e.png"
+      }
+    },
+    "16335920898bc71719": {
+      "type": "about-us-2-column",
+      "disabled": true,
+      "settings": {
+        "heading": "About the Product",
+        "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.   Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos. Lorem ipsum dolor sit amet, consectetur adipiscing elit.   Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos.</p>",
+        "image-right": "shopify://shop_images/Group_1_9e60b0c5-ab96-4a4e-b8f6-c03f8a02c944.png"
+      }
+    },
+    "1634297184d0d8f806": {
+      "type": "review-section",
+      "blocks": {
+        "58ebbe88-fe65-4c9d-9c34-dc11cdc05e66": {
+          "type": "review",
+          "settings": {
+            "heading": "Awesome",
+            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.   Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos.</p>",
+            "name": "Anna Davis"
+          }
+        },
+        "1deae37b-c9b1-4121-9b2e-782f7148489a": {
+          "type": "review",
+          "settings": {
+            "heading": "Tastes Amazing",
+            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.   Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos.</p>",
+            "name": "Kristin G."
+          }
+        },
+        "c87dbcc9-5be2-4283-b789-ce3adc3b3022": {
+          "type": "review",
+          "settings": {
+            "heading": "Love them!!",
+            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.   Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos.</p>",
+            "name": "Bethany S."
+          }
+        },
+        "59a1507f-8875-4ae5-a894-67674b044df8": {
+          "type": "review",
+          "settings": {
+            "heading": "Nutritious",
+            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.   Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos.</p>",
+            "name": "Bethany S."
+          }
+        },
+        "cde69bc3-ae50-466d-8c40-ad0f62dc159d": {
+          "type": "review",
+          "settings": {
+            "heading": "Tastes Amazing",
+            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.   Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos.</p>",
+            "name": "Bethany S."
+          }
+        }
+      },
+      "block_order": [
+        "58ebbe88-fe65-4c9d-9c34-dc11cdc05e66",
+        "1deae37b-c9b1-4121-9b2e-782f7148489a",
+        "c87dbcc9-5be2-4283-b789-ce3adc3b3022",
+        "59a1507f-8875-4ae5-a894-67674b044df8",
+        "cde69bc3-ae50-466d-8c40-ad0f62dc159d"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "What Our Community Is Saying",
+        "bg-color": "#76cee5"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16334167021cc09b05",
+    "1633418211452551e3",
+    "1633419571547f6135",
+    "1633419579a85cbd0b",
+    "1633419637ef1a3a5f",
+    "1633587010e587ccd6",
+    "16335920898bc71719",
+    "1634297184d0d8f806"
+  ]
+}

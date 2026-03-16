@@ -1,0 +1,64 @@
+<div class="three-column-section y-pad_s ">
+<div class="three-column-grid flex page-width_12 flex_wrap align_center">
+  <div class="product-3col-leftimg width_25  mob--width_100  mob--min-width_0 x-pad_xl text_center">
+      <h2 class="f4 desktop-hide text_center y-margin_xs">{{section.settings.heading}}</h2>
+{% render 'image', image:section.settings.image-left, class:" mob--width_50 margin_auto y-margin_m" %}
+<!--     <img src="{{section.settings.image-left | img_url:"master"}}" class="mob--width_50 margin_auto y-margin_m"> -->
+
+    </div>
+
+  <div class="three-column-blocks-container width_45 x-pad_xl mob--width_100 min-width_300 mob--min-width_0">
+  <h2 class="f4 mobile-hide">{{section.settings.heading}}</h2>
+   <div class="f9 child-inherit">{{section.settings.description}}</div>
+     
+  </div>
+    
+  <div class="product-3col-rightimg width_30 x-pad_s mob--width_100  mob--min-width_0 mobile-hide">
+{% render 'image', image:section.settings.image-right, class:"" %}
+
+    </div>
+  
+  
+  </div>
+
+
+</div>
+{% schema %}
+  {
+    "name": "Product Three Column",
+    "settings": [
+  {
+  "type":"text",
+  "id":"heading",
+  "label":"Enter Heading"
+  },
+  {
+  "type":"richtext",
+  "id":"description",
+  "label":"Enter description"
+  },
+  {
+  "type":"image_picker",
+  "id":"image-left",
+  "label":"Select Left Image"
+  },
+  {
+  "type":"image_picker",
+  "id":"image-right",
+  "label":"Select Right Image"
+  }
+],
+  "presets":[
+  {
+  "category":"Custom Section",
+  "name":"Product Three Column"
+  }
+  ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

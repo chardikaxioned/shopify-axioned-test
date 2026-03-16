@@ -1,0 +1,439 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "877fa93a-f003-42f6-a04c-1a8c3a8c189b": {
+      "type": "image-banner",
+      "blocks": {
+        "template--14685460234305__877fa93a-f003-42f6-a04c-1a8c3a8c189b-16771819782b6be4d0-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Meet your new PMS bestie 💕",
+            "heading_size": "medium"
+          }
+        },
+        "template--14685460234305__877fa93a-f003-42f6-a04c-1a8c3a8c189b-16771819782b6be4d0-1": {
+          "type": "text",
+          "settings": {
+            "text": "Strawberry Lemonade PMS gummies made to support comfort, hormones & your monthly mood. This week: take 20% off through the 21st — discount automatically applied at checkout!"
+          }
+        },
+        "template--14685460234305__877fa93a-f003-42f6-a04c-1a8c3a8c189b-16771819782b6be4d0-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop PMS",
+            "button_link_1": "shopify://products/pms-support-gummies",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--14685460234305__877fa93a-f003-42f6-a04c-1a8c3a8c189b-16771819782b6be4d0-0",
+        "template--14685460234305__877fa93a-f003-42f6-a04c-1a8c3a8c189b-16771819782b6be4d0-1",
+        "template--14685460234305__877fa93a-f003-42f6-a04c-1a8c3a8c189b-16771819782b6be4d0-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/gradient_fruit_background.png",
+        "adapt_height_first_image": false,
+        "desktop_text_box_position": "center",
+        "show_text_box": true,
+        "image_overlay_opacity": 0,
+        "color_scheme": "background-1",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "image_banner_ijMbgN": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_xJCepP": {
+          "type": "heading",
+          "settings": {
+            "heading": "New to the BeLive Family!",
+            "heading_size": "medium"
+          }
+        },
+        "text_EDceeh": {
+          "type": "text",
+          "settings": {
+            "text": "Discover our newest formulas—crafted with care and bursting with bright, summery flavor!"
+          }
+        },
+        "buttons_H7ULQ6": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "PMS Support",
+            "button_link_1": "shopify://products/pms-support-gummies",
+            "button_style_secondary_1": false,
+            "button_label_2": "Magnesium Citrate",
+            "button_link_2": "shopify://products/magnesium-citrate-gummies",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_xJCepP",
+        "text_EDceeh",
+        "buttons_H7ULQ6"
+      ],
+      "disabled": true,
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Amazon_Store_Page_PMS_Magnesium_Citrate_V3.jpg",
+        "adapt_height_first_image": false,
+        "desktop_text_box_position": "center",
+        "show_text_box": true,
+        "image_overlay_opacity": 0,
+        "color_scheme": "background-1",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "16613753974bf49c9b": {
+      "type": "image-banner",
+      "blocks": {
+        "1661375397a485a052-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "We've got good taste",
+            "heading_size": "medium"
+          }
+        },
+        "1661375397a485a052-1": {
+          "type": "text",
+          "settings": {
+            "text": "Treating yourself has never been so good for you —just ask our community of 60 million."
+          }
+        },
+        "1ae796c2-5619-42ae-96f4-237f7d960440": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "SHOP NOW",
+            "button_link_1": "shopify://collections/all",
+            "button_style_secondary_1": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "1661375397a485a052-0",
+        "1661375397a485a052-1",
+        "1ae796c2-5619-42ae-96f4-237f7d960440"
+      ],
+      "settings": {
+        "image_2": "shopify://shop_images/220803_DLT_BeLive_0520_WiniLao_1_419fca19-9321-438d-b41c-1568f7e3465e.jpg",
+        "adapt_height_first_image": false,
+        "desktop_text_box_position": "center",
+        "show_text_box": true,
+        "image_overlay_opacity": 0,
+        "color_scheme": "background-1",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "1632832786a038373c": {
+      "type": "image-with-text",
+      "blocks": {
+        "1632832786a038373c-0": {
+          "type": "heading",
+          "settings": {
+            "subheading": "<div style=\"display:block;margin-bottom:15px;\"></div>\nAmazon’s Leading Gummies Vitamin Brand\n<div style=\"display:block;margin-bottom:15px\"></div>",
+            "heading": "We've Got Good Taste"
+          }
+        },
+        "1632832786a038373c-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Treating yourself has never been so good for you —just ask our community of 60 million.</p>"
+          }
+        },
+        "1632832786a038373c-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Now",
+            "button_link": "shopify://collections/all"
+          }
+        }
+      },
+      "block_order": [
+        "1632832786a038373c-0",
+        "1632832786a038373c-1",
+        "1632832786a038373c-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/220803_DLT_BeLive_0354_WiniLao.jpg",
+        "height": "small",
+        "color_scheme": "background-2",
+        "layout": "image_first"
+      }
+    },
+    "1632836645b56f3a9a": {
+      "type": "custom-icon-slider",
+      "blocks": {
+        "2e891735-0f0e-40b3-973c-ff6c5311aedd": {
+          "type": "logo-text",
+          "settings": {
+            "bg-color": "#f2caf2",
+            "image": "shopify://shop_images/BeLive_Weight_Management_1500x_f7b96295-d706-4b9d-994d-a294a7cf6685.png",
+            "heading": "Shop Weight Management",
+            "subheading": "",
+            "link": "shopify://collections/weight-management"
+          }
+        },
+        "6789bbbb-592c-497e-bd72-e79e460fadbb": {
+          "type": "logo-text",
+          "settings": {
+            "bg-color": "#b0e4f4",
+            "image": "shopify://shop_images/output-onlinepngtools_7_1500x_ecb44975-f06c-4250-a170-729e55075444.png",
+            "heading": "Shop Women’s Health",
+            "subheading": "",
+            "link": "shopify://collections/womens-health"
+          }
+        },
+        "1bf7ce6a-40a6-4776-b4b5-8eb3119fdee5": {
+          "type": "logo-text",
+          "settings": {
+            "bg-color": "#c3eec2",
+            "image": "shopify://shop_images/output-onlinepngtools_8_1500x_08371bd9-6f8a-4707-b8ec-26b59029b768.png",
+            "heading": "Shop Immunity",
+            "subheading": "",
+            "link": "shopify://collections/immunity"
+          }
+        },
+        "1be2a336-d4c0-49d8-ae7a-19f5bf324e0e": {
+          "type": "logo-text",
+          "settings": {
+            "bg-color": "#efd4ab",
+            "image": "shopify://shop_images/Group_4_2x_1500x_0aa91a4d-9b7b-4b04-9a40-1fb96089191d.png",
+            "heading": "Shop Digestive Health",
+            "subheading": "",
+            "link": "shopify://collections/digestive-health"
+          }
+        },
+        "58bef1e1-f45b-4a9a-b121-5de1924351a1": {
+          "type": "logo-text",
+          "settings": {
+            "bg-color": "#fbe780",
+            "image": "shopify://shop_images/Group_13_2x_1500x_4d70ba9f-940b-42aa-aa50-eda7d5ff7d53.png",
+            "heading": "Shop Bundles",
+            "subheading": "Save 15%",
+            "link": "#"
+          }
+        }
+      },
+      "block_order": [
+        "2e891735-0f0e-40b3-973c-ff6c5311aedd",
+        "6789bbbb-592c-497e-bd72-e79e460fadbb",
+        "1bf7ce6a-40a6-4776-b4b5-8eb3119fdee5",
+        "1be2a336-d4c0-49d8-ae7a-19f5bf324e0e",
+        "58bef1e1-f45b-4a9a-b121-5de1924351a1"
+      ],
+      "disabled": true,
+      "settings": {}
+    },
+    "1632985439293b5404": {
+      "type": "custom-three-column",
+      "blocks": {
+        "30863a62-75b5-403c-b9d4-620e289103ab": {
+          "type": "image-text",
+          "settings": {
+            "heading": "NATURAL INGREDIENTS",
+            "description": "<p>No artificial colors of preservatives. </p>",
+            "icon": "shopify://shop_images/strawberry_1f353.png"
+          }
+        },
+        "97462e90-447f-4cc5-b040-2b0a7fe9ca31": {
+          "type": "image-text",
+          "settings": {
+            "heading": "Great Taste",
+            "description": "<p>Our gummies are naturally produced with superior formulas for a better, more delicious taste.</p>",
+            "icon": "shopify://shop_images/lemon_1f34b.png"
+          }
+        },
+        "2f043ad6-2312-4944-981e-a657c4aef54c": {
+          "type": "image-text",
+          "settings": {
+            "heading": "Allergy Friendly",
+            "description": "<p>Dairy-Free, Nut Free, Egg Free, Gluten Free, Soy Free</p>",
+            "icon": "shopify://shop_images/peach_1f351.png"
+          }
+        }
+      },
+      "block_order": [
+        "30863a62-75b5-403c-b9d4-620e289103ab",
+        "97462e90-447f-4cc5-b040-2b0a7fe9ca31",
+        "2f043ad6-2312-4944-981e-a657c4aef54c"
+      ],
+      "settings": {
+        "heading": "We make vitamins fun",
+        "description": "<p>Our gummies taste good to make you feel even better. Made of superior (and delicious!) formulas that support your health, we might just become the best part of your daily routine.</p>",
+        "label": "Shop Gummies",
+        "link": "shopify://collections/all",
+        "image": "shopify://shop_images/PROPER_CROP_6.png"
+      }
+    },
+    "16613757182b2ceafb": {
+      "type": "simple-banner",
+      "settings": {
+        "image": "shopify://shop_images/Asset_3.png",
+        "heading": "",
+        "overlay": false,
+        "color": ""
+      }
+    },
+    "1632839974cf626263": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Best Sellers",
+        "collection": "all",
+        "products_to_show": 6,
+        "show_view_all": true,
+        "swipe_on_mobile": true,
+        "image_ratio": "square",
+        "show_secondary_image": true,
+        "add_image_padding": true,
+        "show_image_outline": false,
+        "show_vendor": false,
+        "show_rating": false
+      }
+    },
+    "16328493135b41d004": {
+      "type": "product-list",
+      "blocks": {
+        "ca97dcbb-d2ff-45b5-bf97-bfbb6dcc4770": {
+          "type": "product",
+          "settings": {
+            "product": "magnesium-gummies-made-with-magnesium-glycinate-for-stress-relief-support-optimal-relaxation-calm-mood-supplement-for-adults-and-kids-pineapple-flavor-60-count",
+            "bg-color": "#f2caf2",
+            "heading": "Weight Management Bundle"
+          }
+        },
+        "3e687585-4ebd-44f9-b4e3-3e657cb4b04d": {
+          "type": "product",
+          "settings": {
+            "product": "biotin-updated-1",
+            "bg-color": "#b0e4f4",
+            "heading": "Women’s Health Bundle"
+          }
+        },
+        "acf1dfd9-38e8-4606-be88-1107a3b0e311": {
+          "type": "product",
+          "settings": {
+            "product": "elderberry-gummies",
+            "bg-color": "#c3eec2",
+            "heading": "Digestive Health Bundle"
+          }
+        },
+        "ea508e66-01af-4378-8e19-430e2c63879e": {
+          "type": "product",
+          "settings": {
+            "product": "d3-b12-gummies-sugar-free-gummies-vitamin-d-and-methyl-b12-vitamins-for-immune-support-energy-bone-health-supports-metabolism-strawberry-flavor-60-count",
+            "bg-color": "#efd4ab",
+            "heading": "Immunity Bundle"
+          }
+        }
+      },
+      "block_order": [
+        "ca97dcbb-d2ff-45b5-bf97-bfbb6dcc4770",
+        "3e687585-4ebd-44f9-b4e3-3e657cb4b04d",
+        "acf1dfd9-38e8-4606-be88-1107a3b0e311",
+        "ea508e66-01af-4378-8e19-430e2c63879e"
+      ],
+      "disabled": true,
+      "settings": {
+        "swipe_on_mobile": true,
+        "heading": "Shop Our Bundles and Save 10%"
+      }
+    },
+    "163415227805247d01": {
+      "type": "review-section",
+      "blocks": {
+        "cc46ee65-3ef0-4e64-a09e-b7caf2622e91": {
+          "type": "review",
+          "settings": {
+            "heading": "Tastes great and really work",
+            "description": "<p>These are so great to travel as I have a magnesium deficiency and usually take a powder form. I will always carry in my bag. they taste like a sour gummy bear and help me sleep good as well. Also sugar free a plus. What a GREAT product so happy. </p>",
+            "name": "Lucy T"
+          }
+        },
+        "e40d76ae-3015-4eaa-9cc0-733904cd0875": {
+          "type": "review",
+          "settings": {
+            "heading": "Easy to take",
+            "description": "<p>These gummies are easy to chew and have an agreeable taste.  They don't taste so wonderful that you want to scarf them all down like candy, but they <br/>taste just fine and aren't disgusting.  I won't have any problem taking <br/>these 2x daily.<br/></p>",
+            "name": "Henrietta S"
+          }
+        },
+        "8fded899-b370-46bc-ae3c-fbb4f0755313": {
+          "type": "review",
+          "settings": {
+            "heading": "Great taste, better than taking the large pills",
+            "description": "<p>This product is unique because I have not seen magnesium glycinate <br/>gummies before. Usually they come in very large pills that are hard to <br/>swallow. This has a great taste. Not too sweet.<br/><br/>  <br/></p>",
+            "name": "Jessica C"
+          }
+        },
+        "2e177537-3264-44bc-bdfe-333d9454f4e9": {
+          "type": "review",
+          "settings": {
+            "heading": "4yr old LOVES them!",
+            "description": "<p>I ordered these for my 4yr old who was diagnosed with Juvenile <br/>Rheumatoid Arthritis. The photo of her knees was this morning (7-16-19).<br/></p>",
+            "name": "Bethany S."
+          }
+        },
+        "220e5032-a69f-4443-b9d7-9d83e9fc6b0f": {
+          "type": "review",
+          "disabled": true,
+          "settings": {
+            "heading": "Tastes Amazing",
+            "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.   Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos.</p>",
+            "name": "Bethany S."
+          }
+        }
+      },
+      "block_order": [
+        "cc46ee65-3ef0-4e64-a09e-b7caf2622e91",
+        "e40d76ae-3015-4eaa-9cc0-733904cd0875",
+        "8fded899-b370-46bc-ae3c-fbb4f0755313",
+        "2e177537-3264-44bc-bdfe-333d9454f4e9",
+        "220e5032-a69f-4443-b9d7-9d83e9fc6b0f"
+      ],
+      "settings": {
+        "heading": "What BeLive Customers Are Saying",
+        "bg-color": "#76cee5"
+      }
+    },
+    "1634575205c8f8cb8b": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "877fa93a-f003-42f6-a04c-1a8c3a8c189b",
+    "image_banner_ijMbgN",
+    "16613753974bf49c9b",
+    "1632832786a038373c",
+    "1632836645b56f3a9a",
+    "1632985439293b5404",
+    "16613757182b2ceafb",
+    "1632839974cf626263",
+    "16328493135b41d004",
+    "163415227805247d01",
+    "1634575205c8f8cb8b"
+  ]
+}

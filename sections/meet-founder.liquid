@@ -1,0 +1,63 @@
+<div class="meet-founder-section y-margin_s flow_hid" style="background-color:{{section.settings.bg-color}};">
+<div class="meet-founder-container flex page-width_14 justify_center  flex_wrap">
+  <div class="meet-founder-image-container width_30 mob--width_100 min-width_300 mob--min-width_0">
+    <div class="meet-founder-image-bg" style="background-color:{{section.settings.image-color}};"></div>
+        {% render 'image', image:section.settings.image, class:"pad-top_l" %}
+  </div>
+  <div class="meet-founder-content width_70 y-pad_l x-pad_xl flex mob--width_100 min-width_300 mob--min-width_0">
+    <div class="page-width_6 margin_auto">
+    <h5 class="h4 y-margin_0 pad-bot_xs pos_rel" style="color:{{section.settings.text-color}};">{{section.settings.heading}}</h5>
+    <div style="line-height:1.8;"class="f9 child-inherit y-margin_0 p " style="color:{{section.settings.color}};">{{section.settings.description}}</div>
+  </div>
+  </div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Meet The Founder",
+    "settings": [
+{
+"type": "color",
+"id": "image-color",
+"label": "Image Background Color"
+},
+{
+"type": "color",
+"id": "bg-color",
+"label": "Background Color"
+},
+{
+"type": "color",
+"id": "text-color",
+"label": "text Color"
+},
+{
+"type":"text",
+"id":"heading",
+"label":"Add Heading"
+},
+{
+"type":"richtext",
+"id":"description",
+"label":"Add Description"
+},
+{
+"type":"image_picker",
+"id":"image",
+"label":"Add Founder Image"
+}
+],
+"presets":[
+{
+"name":"Meet Founder",
+"category":"custom"
+}
+]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

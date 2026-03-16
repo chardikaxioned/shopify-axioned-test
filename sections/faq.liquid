@@ -1,0 +1,353 @@
+<h1 class="faq-title main-page-title page-title h3 text_center weight_700 y-pad_m " style="margin:0px;background-color:{{section.settings.bg-color}};">
+    {% if section.settings.title != blank %}
+   {{section.settings.title}}
+   {% else %}
+   {{ page.title | escape }}
+   {%endif%}
+  </h1>
+
+<div class="faq-page">
+<div class="faq-page-grid">
+  <div class="faq-tabs-control-wrapper mob--text_center">
+<div class="faq-tabs-control-container mobile-hide">
+  {% for block in section.blocks %}
+  {% if block.type == "heading" %}
+  <a  class="cursor_point f8 faq-tab-control weight_400 " data-index="#head-{{block.id}}" >{{block.settings.heading}}</a>
+  {% endif %}
+  {% endfor %}
+  
+  
+  </div>
+    <select class="desktop-hide faq-scroll">
+  {% for block in section.blocks %}
+  {% if block.type == "heading" %}
+      <option class="f8 weight_400 " data-index="#head-{{block.id}}" >{{block.settings.heading}}</option>
+  {% endif %}
+  {% endfor %}
+  
+  
+    </select>
+    
+  </div>
+  
+<div class="faq-tabs-content-container">
+
+
+   
+   <div class="faq-accordain-container">
+   {% for block in section.blocks %}
+     {% if block.type == 'faq' %}
+   <div class="faq-accordain" {{block.shopify_attributes}}>
+   <div class="faq-question">
+     <p class="f10 y-margin_0">{{block.settings.question}}</p>
+     <i class="fa-plus" style="font-size:20px;    line-height: 1;font-style: normal;">+</i>
+
+     </div>
+     <div class="faq-answer">
+       <p class="f10 y-margin_0">{{block.settings.answer}}</p>
+     </div>
+     </div>
+       {% elsif block.type == 'heading' %}
+  <h3 class="f6 y-margin_0 faq-heading" id="head-{{block.id}}" {{block.shopify_attributes}} >{{block.settings.heading}}</h3>
+
+    {%endif%}
+   {% endfor %}
+  </div>
+   
+   
+
+  
+  </div>
+  </div>
+
+
+
+
+</div>
+<style>
+  
+ 
+
+  
+  .faq-page{
+  
+  }
+  .faq-page-grid{
+  display:flex;
+    flex-wrap:wrap;
+  
+  }
+  
+  
+  
+  .faq-tabs-control-wrapper{
+    padding:60px 20px;
+    width:30%;
+  flex-grow:1;
+  min-width:200px;
+  
+  }
+  .faq-tabs-control-container{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    max-width:350px;
+    margin:auto;
+        position: sticky;
+    top: 100px;
+  }
+
+  .faq-tab-control{
+  cursor:pointer;
+    color:black;
+  text-decoration:none;
+    padding:5px 10px;
+    text-align:center;
+    display:inline-block;
+   margin:10px 0px !important;
+    text-align:left;
+  }
+  
+  .faq-tabs-control-container > h1{
+  padding-bottom:30px;
+  }
+
+.faq-tabs-content-container{
+  padding:60px 20px;
+  width:70%;
+  flex-grow:1;
+  background-color:white;
+  min-width:280px;
+  }
+  .faq-tab-content > h1{
+    max-width:400px;
+   margin-bottom:200px !important;
+  }
+  .faq-tab-content{
+  display:block;
+    max-width:1000px;
+    margin:auto;
+  }
+
+.control-tab-active{
+font-weight:bold;
+}
+.content-tab-active{
+display:block;
+}
+
+  .faq-accordain{
+    border-bottom:1px solid lightgray;
+    padding:10px 0px;
+  }
+  .faq-heading{
+    border-bottom:1px solid lightgray;
+    padding:10px;
+    margin-top:20px;
+  }
+  .faq-accordain:first-child{
+    border-top:1px solid lightgray;
+  }
+  .faq-question{
+  display:flex;
+    cursor:pointer;
+    justify-content:space-between;
+    align-items:center;
+    padding:0px 10px;
+    padding-top:0px;
+    margin:0px;
+  }
+  .faq-answer{
+  max-height:0px;
+    padding:0px 10px;
+    overflow:hidden;
+    transition:0.3s ease;  }
+  .faq-question p{
+    padding-right:20px;
+  }
+  .faq-answer p{
+   }
+
+@media(max-width:767px){
+  .header{
+  background-color:white !important;
+  }
+    .faq-tabs-control-container{
+    flex-direction:row;
+    max-width:100%;
+      flex-wrap:wrap;
+  }
+   .faq-tabs-control-container > h1{
+   width:100%;
+   }
+  
+   .faq-tabs-control-container > h3{
+   width:auto;
+  }
+
+  .faq-tab-control{
+  }
+ .faq-tabs-control-container{
+      justify-content: center;
+    padding: 0px;
+  }
+  .faq-tab-content > h1{
+  margin-bottom:40px !important;
+  }
+  .faq-tabs-content-container{
+  padding:20px;
+    padding-top:0px;
+    margin-top:-15px;
+  }
+  .faq-tabs-control-wrapper{
+  padding:20px;
+    padding-top:30px;
+  }
+  .faq-question p{
+  }
+  .faq-question i{
+  font-size:16px !important;
+  }
+  .faq-answer p{
+  }
+  .faq-tab-content > h1{
+  }
+  
+  
+  
+  
+  
+  
+  
+} 
+  
+  </style>
+
+{% schema %}
+  {
+    "name": "FAQs",
+    "settings": [
+		{
+"type":"text",
+"id":"title",
+"label":"Enter Title"
+},
+  {
+     "type": "color",
+      "id": "bg-color",
+      "label": "Set Banner Background Color",
+        "default":"#DCF8DB"
+    }
+],
+	"blocks": [
+		{
+			"type": "faq",
+			"name": "FAQs",
+			"settings": [	
+
+{
+			"type": "text",
+			"id": "question",
+			"label":"Add Question"
+		},
+		{
+			"type": "text",
+			"id": "answer",
+			"label":"Add Answer"
+		}
+		]
+		},
+{
+			"type": "heading",
+			"name": "Heading",
+			"settings": [	
+
+{
+			"type": "textarea",
+			"id": "heading",
+			"label":"Add Heading"
+		}
+		]
+		}
+	]
+  }
+{% endschema %}
+
+
+<script>
+  
+ var button = document.querySelectorAll(".faq-tab-control")
+ var content = document.querySelectorAll(".faq-tab-content")
+  document.querySelectorAll(".faq-tab-control")[0].classList.add("control-tab-active")
+
+ button.forEach(function(btn){
+ 
+   btn.addEventListener("click", function(){
+   console.log("qq")
+   var id = btn.getAttribute("data-index")
+   
+   
+   document.querySelector(id).scrollIntoView({block: "center"});
+
+   
+        button.forEach(function(buton){
+   
+   buton.classList.remove('control-tab-active')
+   })
+   btn.classList.add('control-tab-active')
+   
+   
+   
+   
+   content.forEach(function(text){
+   
+   text.classList.remove('content-tab-active')
+   
+   })
+   
+   document.querySelector(`.faq-tab-content[data-index="${index}"]`).classList.add("content-tab-active")   
+  
+  
+   
+   })
+ 
+ })
+  
+ 
+ 
+ 
+    let faq = document.querySelectorAll('.faq-question');
+  faq.forEach(function(item){
+    item.addEventListener('click', function(){
+    var faq_icon = item.lastElementChild;
+        var faq_answer = item.nextElementSibling;
+    if(faq_answer.style.maxHeight){
+      item.firstElementChild.classList.remove("weight_600")
+      faq_answer.style.paddingTop = null;
+    faq_answer.style.maxHeight = null;
+            faq_icon.innerHTML = "+"
+    }
+      else{
+
+      item.firstElementChild.classList.add("weight_600")
+      faq_answer.style.paddingTop = "15px";
+       faq_answer.style.maxHeight = faq_answer.scrollHeight + 15 + "px" ;
+            faq_icon.innerHTML = "-"
+      }
+    })
+  })
+
+
+ var scrollSelect = document.querySelector(".faq-scroll")
+  scrollSelect.addEventListener("change",function(){
+  
+var id = scrollSelect.selectedOptions[0].getAttribute("data-index")
+  
+document.querySelector(id).scrollIntoView({block: "center"});
+
+  })
+ 
+ 
+  
+</script>
+

@@ -1,0 +1,40 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "1633592991feae8045": {
+      "type": "simple-banner",
+      "settings": {
+        "image": "shopify://shop_images/Untitled_design_10.png",
+        "heading": "",
+        "overlay": false,
+        "color": "#ffffff"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "form": {
+      "type": "contact-form",
+      "settings": {
+        "heading": "Have a Question?",
+        "description": "<p>Click <a href=\"/pages/faq\" title=\"FAQ\">here </a>for our FAQ! If you need more information, please email us at contact@belivestore.com or fill out the form below.</p>",
+        "bg-color": "#76cee5"
+      }
+    }
+  },
+  "order": [
+    "1633592991feae8045",
+    "main",
+    "form"
+  ]
+}

@@ -1,0 +1,54 @@
+<div class="simple-banner-section">
+   {% if section.settings.image != blank %}
+  <img alt="{{ section.settings.image.alt | escape }}" src="{{section.settings.image | img_url:"master"}}">
+  
+{% comment%}   {% render 'image', image:section.settings.image, class:"" %} {% endcomment %}
+  {%endif%}
+  {% if section.settings.overlay == true %} 
+  <div class="overlay">
+  </div>
+  {%endif%}
+  {% if section.settings.heading != blank %}
+  <h3 class="text_center mob--font_25" style="color:{{section.settings.color}};">{{section.settings.heading}}</h3>
+  {% endif %}
+</div>
+{% schema %}
+  {
+    "name": "Simple Hero Image",
+    "settings": [
+{
+"type":"image_picker",
+"id":"image",
+"label":"Select Image"
+},
+{
+"type":"textarea",
+"id":"heading",
+"label":"Enter Heading"
+},
+{
+"type":"checkbox",
+"id":"overlay",
+"label":"Enable Overlay"
+},
+
+{
+"type":"color",
+"id":"color",
+"label":"Select Heading Color"
+}
+],
+  "presets":[
+  {
+  "category":"Custom Section",
+  "name":"Simple Banner"
+  }
+  ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

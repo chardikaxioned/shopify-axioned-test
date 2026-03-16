@@ -1,0 +1,367 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "current": {
+    "color-pri": "#76cee5",
+    "color-sec": "#ffac00",
+    "color-alt": "#ffdcff",
+    "colors_solid_button_labels": "#76cee5",
+    "colors_accent_1": "#ff695c",
+    "colors_accent_2": "#ffac00",
+    "colors_text": "#000000",
+    "colors_outline_button_labels": "#ff695c",
+    "colors_background_1": "#ffffff",
+    "colors_background_2": "#76cee5",
+    "gradient_background_2": "linear-gradient(54deg, rgba(118, 206, 229, 1) 14%, rgba(255, 250, 99, 1) 85%)",
+    "type_header_font": "assistant_n4",
+    "type_body_font": "assistant_n4",
+    "sale_badge_color_scheme": "accent-2",
+    "accent_icons": "accent-1",
+    "page_width": 1600,
+    "social_facebook_link": "https://www.facebook.com/BeLivenutritions",
+    "social_instagram_link": "https://www.instagram.com/takebelive/?hl=en",
+    "favicon": "shopify://shop_images/favicon_128x128_ba3dedda-0c26-419a-8593-3497cd8f326c.png",
+    "currency_code_enabled": true,
+    "checkout_logo_image": "shopify://shop_images/Logo.png",
+    "checkout_accent_color": "#000000",
+    "checkout_button_color": "#000000",
+    "sections": {
+      "announcement-bar": {
+        "type": "announcement-bar",
+        "blocks": {
+          "announcement_Q8cPwJ": {
+            "type": "announcement",
+            "disabled": true,
+            "settings": {
+              "text": "Welcome to our store",
+              "color_scheme": "accent-1",
+              "link": ""
+            }
+          },
+          "announcement-bar-0": {
+            "type": "announcement",
+            "disabled": true,
+            "settings": {
+              "text": "Kick off the year with 30% OFF SUBSCRIPTIONS!! Don't miss this deal",
+              "color_scheme": "background-2",
+              "link": "shopify://collections/all"
+            }
+          },
+          "cb8c37cd-82fc-4523-8c46-8c8d5cf8e9d7": {
+            "type": "announcement",
+            "disabled": true,
+            "settings": {
+              "text": "THIS WEEK: Check out the daily deals on 5-HTP, Synbiotics, Turmeric, Magnesium & More! Stack the deals for even more savings! Now through Sunday",
+              "color_scheme": "background-2",
+              "link": "shopify://collections/all"
+            }
+          }
+        },
+        "block_order": [
+          "announcement_Q8cPwJ",
+          "announcement-bar-0",
+          "cb8c37cd-82fc-4523-8c46-8c8d5cf8e9d7"
+        ],
+        "settings": {}
+      },
+      "header": {
+        "type": "header",
+        "settings": {
+          "color_scheme": "background-2",
+          "logo": "shopify://shop_images/Untitled_design_6.png",
+          "bg-color-home": "#eafcff",
+          "bg-color-collection": "#eafcff",
+          "bg-color-product": "#ffffff",
+          "bg-color-other": "#ffffff",
+          "logo_width": 180,
+          "logo_position": "middle-left",
+          "menu": "main-menu",
+          "show_line_separator": false,
+          "enable_sticky_header": true
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "footer-1": {
+            "type": "text",
+            "settings": {
+              "heading": "Our Mission",
+              "subtext": "<p>BeLive was founded in 2017 with a mission to create health-supporting supplements that taste great. We're here to make living a healthy life fun and effortless! Here's to never forgetting to take your supplements again.</p>"
+            }
+          },
+          "footer-0": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Shop",
+              "menu": "footer-shop"
+            }
+          },
+          "27d106e5-4cc0-4737-8527-ce6b2b7436c3": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Customer Service",
+              "menu": "footer-customer-service"
+            }
+          },
+          "af022aec-68a2-4a61-a988-3b93ee60e19d": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Follow Us",
+              "menu": "social"
+            }
+          }
+        },
+        "block_order": [
+          "footer-1",
+          "footer-0",
+          "27d106e5-4cc0-4737-8527-ce6b2b7436c3",
+          "af022aec-68a2-4a61-a988-3b93ee60e19d"
+        ],
+        "settings": {
+          "color_scheme": "background-2",
+          "newsletter_enable": false,
+          "newsletter_heading": "Subscribe to our emails",
+          "show_social": true,
+          "enable_country_selector": false,
+          "enable_language_selector": false,
+          "payment_enable": false,
+          "bottom-description": "<p>**These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease. </p>",
+          "bottom-menu": "",
+          "image": "shopify://shop_images/Group_20_Copy_2.png"
+        }
+      },
+      "faq": {
+        "type": "faq",
+        "blocks": {
+          "94e1c6ed-4076-4459-9b57-51f7c0069e2b": {
+            "type": "heading",
+            "settings": {
+              "heading": "General Questions"
+            }
+          },
+          "31a6b52d-8803-42cf-85a1-843aa19aa6e0": {
+            "type": "faq",
+            "settings": {
+              "question": "Where are BeLive’s products manufactured?",
+              "answer": "Made in NJ & NY."
+            }
+          },
+          "c595be2b-a34f-47df-a71d-1734bcc19ce6": {
+            "type": "faq",
+            "settings": {
+              "question": "Are BeLive’s products keto friendly?",
+              "answer": "No supplements are \"FDA approved\" in the USA. However, supplements need to be manufactured from an FDA registered manufacturer."
+            }
+          },
+          "7fab85f9-9090-4c34-a275-dc3c83e95162": {
+            "type": "faq",
+            "settings": {
+              "question": "Do BeLive’s products contain gelatin?",
+              "answer": "No, our products do not contain gelatin."
+            }
+          },
+          "5e882c7b-1080-4394-9ba6-049127f9e406": {
+            "type": "heading",
+            "settings": {
+              "heading": "Our Products"
+            }
+          },
+          "86282ec9-0724-49f6-ade3-30cf80a95524": {
+            "type": "faq",
+            "settings": {
+              "question": "Are BeLive’s products FDA approved?",
+              "answer": "No supplements are \"FDA approved\" in the USA. However, supplements need to be manufactured from an FDA registered manufacturer."
+            }
+          },
+          "d1babd79-f959-45cc-a336-abede6816029": {
+            "type": "faq",
+            "settings": {
+              "question": "What is the shelf life?",
+              "answer": "2 years."
+            }
+          },
+          "f24c0a49-3d3f-42b9-bea6-e6902cd6bae1": {
+            "type": "faq",
+            "settings": {
+              "question": "Are BeLive’s products non-GMO?",
+              "answer": "Yes, our products are non-GMO."
+            }
+          },
+          "3f27049e-f69d-4eef-8d17-2d9728cc43cb": {
+            "type": "faq",
+            "settings": {
+              "question": "Are the gummies likely to melt while in transit or when being stored?",
+              "answer": "Our gummies are not meltable and can sustain over 120-degrees Fahrenheit. Most gummies are sand coated to protect gummies from melting and stickiness."
+            }
+          },
+          "de3fc73d-8a1f-4489-a000-109cc24e5434": {
+            "type": "faq",
+            "settings": {
+              "question": "Do the Apple Cider Vinegar gummies contain the mother?",
+              "answer": "Yes, they do. We use unfiltered ACV, which contains the mother."
+            }
+          },
+          "2e21fd6f-dae0-4cc0-8154-958f6ed9d19d": {
+            "type": "faq",
+            "settings": {
+              "question": "What strains do the Probiotic gummies have?",
+              "answer": "Bacillus coagulans, 5 billion CFU per serving (2 gummies)."
+            }
+          },
+          "25c3fa7c-4a15-43dd-a6eb-28ef654f90bd": {
+            "type": "faq",
+            "settings": {
+              "question": "What are the specific names of the prebiotics in the Prebiotic Fiber gummies?",
+              "answer": "Inulin and chicory root."
+            }
+          },
+          "1b30a835-f01b-48c8-a912-32ce76886b5c": {
+            "type": "heading",
+            "settings": {
+              "heading": "Returns"
+            }
+          },
+          "adab9f42-f20f-4927-a529-210cc451f19e": {
+            "type": "faq",
+            "settings": {
+              "question": "What is your return policy?",
+              "answer": "We offer a 14-day money back guarantee. Items are eligible for a refund if they are returned within 14 days of receipt, or if the items are defective."
+            }
+          },
+          "2f4a8e82-04c6-499b-9d44-43ed366fe6b2": {
+            "type": "heading",
+            "settings": {
+              "heading": "Delivery Information"
+            }
+          },
+          "ce4faffd-67ae-4299-b933-1f2f9edb29f0": {
+            "type": "faq",
+            "settings": {
+              "question": "Are the gummies likely to melt while in transit or when being stored?",
+              "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            }
+          }
+        },
+        "block_order": [
+          "94e1c6ed-4076-4459-9b57-51f7c0069e2b",
+          "31a6b52d-8803-42cf-85a1-843aa19aa6e0",
+          "c595be2b-a34f-47df-a71d-1734bcc19ce6",
+          "7fab85f9-9090-4c34-a275-dc3c83e95162",
+          "5e882c7b-1080-4394-9ba6-049127f9e406",
+          "86282ec9-0724-49f6-ade3-30cf80a95524",
+          "d1babd79-f959-45cc-a336-abede6816029",
+          "f24c0a49-3d3f-42b9-bea6-e6902cd6bae1",
+          "3f27049e-f69d-4eef-8d17-2d9728cc43cb",
+          "de3fc73d-8a1f-4489-a000-109cc24e5434",
+          "2e21fd6f-dae0-4cc0-8154-958f6ed9d19d",
+          "25c3fa7c-4a15-43dd-a6eb-28ef654f90bd",
+          "1b30a835-f01b-48c8-a912-32ce76886b5c",
+          "adab9f42-f20f-4927-a529-210cc451f19e",
+          "2f4a8e82-04c6-499b-9d44-43ed366fe6b2",
+          "ce4faffd-67ae-4299-b933-1f2f9edb29f0"
+        ],
+        "settings": {
+          "title": "",
+          "bg-color": "#ffebff"
+        }
+      },
+      "newsletter": {
+        "type": "newsletter",
+        "blocks": {
+          "4d178713-564a-490a-b48f-306d6340edba": {
+            "type": "paragraph",
+            "settings": {
+              "heading": "Sign up and Get A 15% Discount!",
+              "text": "<p></p>"
+            }
+          },
+          "e8329d08-5110-4466-85de-87951ffb5be8": {
+            "type": "email_form",
+            "settings": {}
+          }
+        },
+        "block_order": [
+          "4d178713-564a-490a-b48f-306d6340edba",
+          "e8329d08-5110-4466-85de-87951ffb5be8"
+        ],
+        "settings": {
+          "color_scheme": "background-1",
+          "bg-color": "#ffff00",
+          "full_width": true
+        }
+      }
+    },
+    "content_for_index": []
+  },
+  "presets": {
+    "Default": {
+      "colors_solid_button_labels": "#FFFFFF",
+      "colors_accent_1": "#121212",
+      "colors_accent_2": "#334FB4",
+      "colors_text": "#121212",
+      "colors_outline_button_labels": "#121212",
+      "colors_background_1": "#FFFFFF",
+      "colors_background_2": "#F3F3F3",
+      "type_header_font": "assistant_n4",
+      "type_body_font": "assistant_n4",
+      "sections": {
+        "announcement-bar": {
+          "type": "announcement-bar",
+          "blocks": {
+            "announcement-bar-0": {
+              "type": "announcement",
+              "settings": {
+                "color_scheme": "background-1"
+              }
+            }
+          },
+          "block_order": [
+            "announcement-bar-0"
+          ],
+          "settings": {}
+        }
+      }
+    },
+    "Craft": {
+      "colors_solid_button_labels": "#EFECEC",
+      "colors_accent_1": "#2A332F",
+      "colors_accent_2": "#476154",
+      "colors_text": "#1C1A1A",
+      "colors_outline_button_labels": "#7B8382",
+      "colors_background_1": "#EFECEC",
+      "colors_background_2": "#C1BCAE",
+      "type_header_font": "americana_n4",
+      "type_body_font": "quattrocento_sans_n4",
+      "sections": {
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "menu": {
+              "type": "link_list",
+              "settings": {}
+            },
+            "text": {
+              "type": "text",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "menu",
+            "text"
+          ],
+          "settings": {
+            "color_scheme": "accent-1"
+          }
+        }
+      }
+    }
+  }
+}

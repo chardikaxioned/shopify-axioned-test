@@ -1,0 +1,171 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "1633550723aa79ef99": {
+      "type": "simple-banner",
+      "settings": {
+        "image": "shopify://shop_images/Untitled_design_11.png",
+        "heading": "",
+        "overlay": false,
+        "color": "#ffffff"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "16335457941fffd266": {
+      "type": "text-video-column",
+      "blocks": {
+        "16335457941fffd266-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Lynn-Ferguson.png",
+            "product": "omega-3-6-7-9-vegan-gummies-with-organic-flaxseed-oil-and-sea-buckthorn-fruit-oil-great-for-kids-adults-total-body-support-60-ct",
+            "name": "Lynn F",
+            "video_url": "https://youtu.be/y7BOY_DPJkM",
+            "title": "Super Good, Super Yummy!",
+            "text": "<p>I love that these are Vegan, as I eat a mostly Vegan diet, I do have trouble getting a lot of the omegas. They actually taste like peach! </p>"
+          }
+        },
+        "16335457941fffd266-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Review_Person_2.png",
+            "product": "biotin-updated-1",
+            "name": "Amanda P.",
+            "video_url": "https://youtu.be/jTPQlh1_55A",
+            "title": "Delicious",
+            "text": "<p>BeLive Biotin gummies are the perfect addition to your daily routine! Helps with your hair, your skin, and your nails! They are super easy to take!</p>"
+          }
+        },
+        "16335457941fffd266-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Michelle-S2.png",
+            "product": "apple-cider-vinegar-and-ginger-gummies-detox-support-cleanse-bloating-relief-metabolism-booster-supplements-for-women-men-and-kids-60-delicious-apple-flavored-gummies",
+            "name": "Emma R.",
+            "video_url": "https://youtu.be/d27Uym7XcxA",
+            "title": "Awesome",
+            "text": "<p>BeLive has such a wide range of nutritional and yummy dietary supplements to help your body and boost your health!</p>"
+          }
+        }
+      },
+      "block_order": [
+        "16335457941fffd266-0",
+        "16335457941fffd266-1",
+        "16335457941fffd266-2"
+      ],
+      "settings": {
+        "title": "",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": false
+      }
+    },
+    "163355047831829fbd": {
+      "type": "side-text-video",
+      "settings": {
+        "bg_color": "#76cee5",
+        "bg_product_color": "#ffff00",
+        "video_on_left": false,
+        "video_url": "https://youtu.be/bBgZ3qSi_CY",
+        "product": "biotin-updated-1",
+        "prodname": "Biotin",
+        "name": "Elle B.",
+        "image": "shopify://shop_images/Elle-B.png",
+        "head": "Add To Your Daily Routine!",
+        "text": "It's super important to take vitamins like these BeLive Biotin Gummies. These gummies not only taste great, but are super helpful in giving a healthy boost to your hair and nails!"
+      }
+    },
+    "1633550520aee06b7e": {
+      "type": "text-video-column",
+      "blocks": {
+        "1633550520aee06b7e-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Review_Person_3.png",
+            "product": "biotin-updated-1",
+            "name": "Jasmine T.",
+            "video_url": "https://youtu.be/TvMY7E_GetE",
+            "title": "I definitely recommend!",
+            "text": "<p>I've been using these for a week and honestly my hair has gotten longer and stronger. And my skin has gotten clearer!</p>"
+          }
+        },
+        "1633550520aee06b7e-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/1_8546297f-36d1-457d-9519-e2c4187f51bf.png",
+            "product": "apple-cider-vinegar-and-ginger-gummies-detox-support-cleanse-bloating-relief-metabolism-booster-supplements-for-women-men-and-kids-60-delicious-apple-flavored-gummies",
+            "name": "Jenny G.",
+            "video_url": "https://youtu.be/XF5TfSOzJ-M",
+            "title": "No Fishy Taste",
+            "text": "<p>Sugar free, vegan friendly, and gummies! They have a nice peach flavor. The best thing about them is they don't have that bad fish taste or flaxseed oil taste.</p>"
+          }
+        },
+        "1633550520aee06b7e-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Michelle-S.png",
+            "product": "biotin-updated-1",
+            "name": "Michelle S.",
+            "video_url": "https://youtu.be/c58E2ajhC8w",
+            "title": "Tasty!",
+            "text": "<p>Strawberry flavored and they seriously taste like candy!</p>"
+          }
+        }
+      },
+      "block_order": [
+        "1633550520aee06b7e-0",
+        "1633550520aee06b7e-1",
+        "1633550520aee06b7e-2"
+      ],
+      "settings": {
+        "title": "",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": false
+      }
+    },
+    "16335505304f17fab2": {
+      "type": "side-text-video",
+      "settings": {
+        "bg_color": "#76cee5",
+        "bg_product_color": "#ffff00",
+        "video_on_left": true,
+        "video_url": "https://youtu.be/P-LOp7Ksu1U",
+        "product": "apple-cider-vinegar-and-ginger-gummies-detox-support-cleanse-bloating-relief-metabolism-booster-supplements-for-women-men-and-kids-60-delicious-apple-flavored-gummies",
+        "prodname": "ACV",
+        "name": "Elle B.",
+        "image": "shopify://shop_images/Mark-Coulter.png",
+        "head": "Great Taste!",
+        "text": "I don't have to take a disgusting shot of apple cider vinegar anymore. And they are sugar free!"
+      }
+    }
+  },
+  "order": [
+    "1633550723aa79ef99",
+    "main",
+    "16335457941fffd266",
+    "163355047831829fbd",
+    "1633550520aee06b7e",
+    "16335505304f17fab2"
+  ]
+}

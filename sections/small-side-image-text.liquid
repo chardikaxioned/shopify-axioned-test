@@ -1,0 +1,50 @@
+<div class="aboutus-image-text-section flow_hid">
+<div class="aboutus-imagetext-grid flex page-width_8 margin_auto y-pad_s {% if section.settings.change == true %} flex_row-rev {%endif%}">
+  <div class="sideimagetext-image-container  width_30 mob--widt_20">
+{% comment %}      {% render 'image', image:section.settings.image, class:"" %}{% endcomment %}
+  <img alt="{{ section.settings.image.alt | escape }}" class="width_100" src="{{section.settings.image | img_url:"master"}}">
+  </div>
+  <div class="sideimagetext-content x-pad_m width_70 mob--width_80">
+    <h2 class="h5 mob--font_20">{{section.settings.heading}}</h2>
+    <div class="child-inherit f8 mob--font_16">{{section.settings.description}}</div>
+  </div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Custom Side Image Text",
+    "settings": [
+{
+"type":"image_picker",
+"id":"image",
+"label":"Select Image"
+},
+{
+"type":"textarea",
+"id":"heading",
+"label":"Enter Heading"
+},
+{
+"type":"richtext",
+"id":"description",
+"label":"Enter Description"
+},
+{
+"type":"checkbox",
+"id":"change",
+"label":"Change Layout"
+}
+],
+  "presets":[
+  {
+  "category":"Custom Section",
+  "name":"Custom Side image Text"
+  }
+  ]
+  }
+{% endschema %}
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

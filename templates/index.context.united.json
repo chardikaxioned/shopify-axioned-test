@@ -1,0 +1,60 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "parent": "index.json",
+  "context": {
+    "market": "united"
+  },
+  "sections": {
+    "16613753974bf49c9b": {
+      "disabled": false,
+      "settings": {},
+      "blocks": {
+        "1661375397a485a052-0": {
+          "settings": {
+            "heading": "We've got great taste"
+          }
+        },
+        "1661375397a485a052-1": {
+          "settings": {
+            "text": "Treating yourself has never been so healthy or tasted so good! Just ask our community of 60 million fans of fibre gummies, iron supplements, and more."
+          }
+        }
+      }
+    },
+    "1632985439293b5404": {
+      "settings": {
+        "description": "<p>Forget traditional supplements—our delicious gummies make supporting your health feel like a treat. With superior (and tasty!) formulas, we might just become the best part of your daily routine.  </p>"
+      },
+      "blocks": {
+        "30863a62-75b5-403c-b9d4-620e289103ab": {
+          "settings": {
+            "description": "<p>No artificial colours of preservatives. </p>"
+          }
+        },
+        "97462e90-447f-4cc5-b040-2b0a7fe9ca31": {
+          "settings": {
+            "description": "<p>Our entire range, including our turmeric, elderberry, magnesium and iron gummies, are naturally produced with superior formulas for a better, more delicious taste.</p>"
+          }
+        }
+      }
+    },
+    "877fa93a-f003-42f6-a04c-1a8c3a8c189b": {
+      "disabled": true,
+      "settings": {},
+      "blocks": {}
+    },
+    "image_banner_ijMbgN": {
+      "disabled": true,
+      "settings": {},
+      "blocks": {}
+    }
+  }
+}

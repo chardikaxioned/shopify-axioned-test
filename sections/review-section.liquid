@@ -1,0 +1,108 @@
+<div class="review-section " style="background-color:{{section.settings.bg-color}}">
+  <h2 class="mob--x-pad_30 h4 text_center y-pad_m weight_600 mob--font_25" style="margin:0px">{{section.settings.heading}}</h2>
+<div class="rewiew-swiper-container">
+ <div class="rewiew-swiper swiper pad-bot_m x-pad_m">
+    <div class="review-swiper-next swiper-button-next" style="display:block;"></div>
+      <div class="review-swiper-prev swiper-button-prev" style="display:block;"></div>
+         <div class="swiper-pagination swiper-review-pagination"></div>
+   <div class="swiper-wrapper">
+  {% for block in section.blocks %}
+     <div class="review-swiper-slide swiper-slide back_white text-Left x-pad_l y-pad-xs" >
+       <div class="flex justify_between align_center">
+         <h5 class="mob--font_19">{{block.settings.heading}}</h5>
+         <img alt="Yellow Star Review" style="max-width:90px" src="{{'star-yellow.png' | asset_url}}">
+       </div>
+       <div class="child-inherit f8 line-height_norm mob--font_16">
+       {{block.settings.description}}
+       </div>
+       <p class="f8 text_right mob--font_16">{{block.settings.name}}</p>
+     </div>
+     {%endfor%}
+   </div>
+  </div>
+  
+  
+  </div>
+</div> 
+<script>
+      var swiper = new Swiper(".rewiew-swiper", {
+        slidesPerView: "auto",
+        spaceBetween:15,
+        watchOverflow :true,
+        navigation: {
+          nextEl: ".review-swiper-next",
+          prevEl: ".review-swiper-prev",
+        },
+           pagination: {
+          el: ".swiper-review-pagination",
+             clickable:true,
+        },
+//         breakpoints: {
+//           768: {
+//             slidesPerView: 1.2,
+//           },
+            
+//           1024: {
+//             slidesPerView: 2.2,
+//           },
+           
+//           1240: {
+//             slidesPerView: 3.2,
+//           },
+//         },
+      });
+    </script>
+{% schema %}
+  {
+    "name": "Reviews",
+    "settings": [
+{
+"type":"text",
+"label":"Enter Heading",
+"id":"heading"
+},
+{
+"type":"color",
+"label":"Select Background Color",
+"id":"bg-color"
+}
+],
+"blocks":[
+{
+"type":"review",
+"name":"Review",
+"settings":[
+{
+"type":"text",
+"label":"Enter Heading",
+"id":"heading"
+},
+{
+"type":"richtext",
+"label":"Enter Description",
+"id":"description"
+},
+{
+"type":"text",
+"label":"Enter name",
+"id":"name"
+}
+
+
+
+]
+}
+],
+"presets":[
+{
+"name":"Reviews"
+}
+]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

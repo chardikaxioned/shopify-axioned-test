@@ -1,0 +1,5 @@
+<link rel="preload" href="/a/novel/js/novel-storefront.js?shop={{ shop.permanent_domain }}" as="script">
+<script type="text/javascript" async="" src="/a/novel/js/novel-storefront.js?shop={{ shop.permanent_domain }}"></script>
+{% if request and request.origin %}
+    {% assign fullUrl = request.origin | append: request.path %}
+{% endif %}

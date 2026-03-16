@@ -1,0 +1,26 @@
+ <div class="flex flex_col custom-product-card text_center height_100 pos_rel x-pad_m y-pad_s" style="background-color:{{block.settings.bg-color | color_lighten: 6}};">
+  <div class=" product-card-image-container pos_rel" >
+      <a class="product-link" href="{{product.url}}"></a>
+
+    {% if block.settings.image != blank %}
+{% render 'image', image:block.settings.image, class:"" %}
+    {% else %}
+    {% render 'image', image:product.featured_image, class:"" %}
+    {%endif%}
+  </div>
+<div class="product-card-content  x-pad_m pos_rel mob--x-pad_0">
+  <a class="product-link" href="{{product.url}}"></a>
+  <h4 class="product-card-title  card-information__text weight_700 y-margin_0 pad-top_s">{% if block.settings.heading != blank %}
+    {{block.settings.heading | newline_to_br}}
+  {% else %}
+  {{product.title}}
+  
+  {%endif%}
+    </h4>
+ <div class="y-margin_xs">
+  <img src="{{'star-black.png' |asset_url}}">
+  </div>
+  <h4 class="h9 weight_700 y-margin_0 pad-bot_s ">{{product.price | money}}</h4>
+ 
+  </div>
+</div>

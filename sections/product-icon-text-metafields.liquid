@@ -1,0 +1,47 @@
+{% if product.metafields.product_feature.show_product_features == true %}
+<div class="product-icon-text-section x-pad_l y-pad_s" style="background-color:{{section.settings.bg-color}};">
+<div class="product-text-icon-grid flex align_center flex_wrap justify_center text_left page-width_10 margin_auto">
+  <div class="text-block product-icon-block width_20 mob--text_center min-width_200 mob--width_100 x-pad_s mob--x-pad_0 flex-grow_1">
+    <h4 class="y-margin_xs">{{product.metafields.product_feature.main_heading}}</h4>
+  </div>
+  {% for i in (1..4) %}
+{% capture heading %}heading_{{i}}{%endcapture%}
+  {% capture image %}image_{{i}}{%endcapture%}
+  <div class="mob--x-pad_0 mob--flex_row flex flex_col icon-block product-icon-block y-pad_xs text_center width_20 min-width_200 mob--width_100 x-pad_s">
+    {% if product.metafields.product_feature[image] != blank %}
+    	<img src="{{product.metafields.product_feature[image] | img_url:"master"}}" class="x-pad_m mob--width_33 mob--x-pad_0">
+{%endif%}
+    <h6 class="h8 y-margin_xs color_black">{{product.metafields.product_feature[heading]}}</h6>
+  </div>
+  {%endfor%}
+  </div>
+
+</div>
+{%endif%}
+{% schema %}
+  {
+    "name": "Product Text Icon",
+    "settings": [
+{
+            "type": "color",
+            "id": "bg-color",
+            "label": "Block Background Color"
+          }
+          
+],
+    "presets": [
+      {
+        "name": "Product Text Icons Metafields",
+        "category": "Custom Section"
+        
+      }
+    ]
+  }
+{% endschema %}
+
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
